@@ -5,7 +5,7 @@ source $HOME/.homesick/repos/homeshick/homeshick.sh
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 # ls.
-alias ls='ls -FG'
+alias ls='ls -FG' # use symbols and colour to distinguish file types
 
 # ps.
 alias ps='ps -o pid,rss,pcpu,command' # process id, memory usage, command
