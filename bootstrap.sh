@@ -10,12 +10,12 @@ if [ ! -d ~/.homesick/repos/homeshick ]; then
 fi
 
 if [ ! -d ~/.homesick/repos/prezto ]; then
-	echo "Installing `sorin-ionescu/prezto`."
+	echo "Installing sorin-ionescu/prezto."
 	homeshick clone -b sorin-ionescu/prezto
 fi
 
 if [ ! -d ~/.homesick/repos/dotfiles ]; then
-	echo "Installing `mrmachine/dotfiles`."
+	echo "Installing mrmachine/dotfiles."
 	homeshick clone -b mrmachine/dotfiles
 	# TODO: Backup existing files and force linking.
 	homeshick link
