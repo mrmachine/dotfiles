@@ -5,17 +5,17 @@ source $HOME/.homesick/repos/homeshick/homeshick.sh
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 # ls.
-alias ls='ls -FG' # use symbols and colour to distinguish file types
+alias ls='ls -FG'
 
 # ps.
-alias ps='ps -o pid,rss,pcpu,command' # process id, memory usage, command
+alias ps='ps -o pid,rss,pcpu,command'
 
-# sourcetree.
+# SourceTree.
 alias st='/Applications/SourceTree.app/Contents/Resources/stree'
 
-# supervisor.
+# Supervisor.
 alias sup='supervisord -c $HOME/etc/supervisor/supervisord.conf -d $HOME/etc/supervisor'
 alias supctl='supervisorctl -c $HOME/etc/supervisor/supervisord.conf '
 
-# sublime text.
+# Sublime Text.
 alias sub='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
