@@ -7,18 +7,19 @@ if [ ! -d ~/.homesick/repos/homeshick ]; then
 	echo "Installing Homeshick."
 	git clone https://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
 	source ~/.homesick/repos/homeshick/homeshick.sh
+	homeshick link homeshick
 fi
 
 if [ ! -d ~/.homesick/repos/prezto ]; then
 	echo "Installing sorin-ionescu/prezto."
-	homeshick clone -b sorin-ionescu/prezto
+	homeshick clone sorin-ionescu/prezto
 fi
 
 if [ ! -d ~/.homesick/repos/dotfiles ]; then
 	echo "Installing mrmachine/dotfiles."
 	homeshick clone -b mrmachine/dotfiles
 	# TODO: Backup existing files and force linking.
-	homeshick link
+	homeshick link dotfiles
 fi
 
 ZSH=`which zsh`
