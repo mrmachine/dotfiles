@@ -1,4 +1,5 @@
 *.orig
-*.pyc
+*.py[co]
+*.sublime-workspace
 *~
 .DS_Store
