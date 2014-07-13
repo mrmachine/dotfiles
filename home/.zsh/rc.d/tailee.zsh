@@ -22,5 +22,8 @@ alias sub='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 # Exports.
 #
 
+# Use Sublime Text as the editor for interactive Git commands.
+export GIT_EDITOR="subl --wait --new-window"
+
 # PATH.
 export PATH=$HOME/bin:$PATH
