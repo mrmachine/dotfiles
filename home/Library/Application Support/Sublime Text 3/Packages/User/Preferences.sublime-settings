@@ -1,4 +1,18 @@
 {
+	// Annaconda Settings.
+	"complete_parameters": true,
+	// "complete_all_parameters": true,
+	// "display_signatures": true,
+	"anaconda_gutter_theme": "hard",
+	"anaconda_linter_mark_style": "none",
+	// "use_pylint": true,
+	"pep257": true,
+	"pylint_ignore":
+	[
+	],
+	"pyflakes_ignore_import_*": false,
+
+	// Sublime Text settings.
 	"auto_complete_commit_on_tab": true,
 	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
