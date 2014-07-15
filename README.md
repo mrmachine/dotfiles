@@ -1,11 +1,11 @@
 Overview
 ========
 
-A bootstrap script for [Homeshick][1] and [Prezto][2].
+A bootstrap script for [Homeshick][1], [Prezto][2] and my personal dotfiles.
 
 	curl -L http://bit.ly/mrmachine-dotfiles | sh
 
-This will install Homeshick, Prezto, and my personal configuration dotfiles:
+Includes the following features:
 
 * Keep `~` clean by placing Zsh dotfiles in `~/.zsh`.
 * Enable optional Prezto modules: `archive`, `git`, `homebrew`, `node`, `osx`,
@@ -18,9 +18,11 @@ This will install Homeshick, Prezto, and my personal configuration dotfiles:
   from multiple collaborative castles.
 * Aliases: `ls`, `ps`, `st` ([SourceTree][3]), `sup` and `supctl`
   ([Supervisor][4]), and `sub` ([Sublime Text][5]).
-* Sublime Text 3 preferences.
+* Sublime Text [preferences][6] and plugins including: [Anaconda][7],
+  [EditorConfig][8] , [GitGutter][9], and [Package Control][10].
 * Editorconfig.
 * Global ignores for Git and Mercurial.
+* An optional Terminal.app theme based on the Twilight theme for TextMate.
 
 You should add to, delete, extend or replace the default configuration as you
 see fit, then commit and push your changes to a remote repository.
@@ -30,3 +32,8 @@ see fit, then commit and push your changes to a remote repository.
 [3]: http://www.sourcetreeapp.com/
 [4]: http://supervisord.org/
 [5]: http://www.sublimetext.com/
+[6]: https://github.com/mrmachine/dotfiles/tree/master/home/Library/Application%20Support/Sublime%20Text%203/Packages/User
+[7]: https://github.com/DamnWidget/anaconda
+[8]: https://github.com/sindresorhus/editorconfig-sublime
+[9]: https://github.com/jisaacks/GitGutter
+[10]: https://github.com/wbond/sublime_package_control
