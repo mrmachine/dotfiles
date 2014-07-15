@@ -1,4 +1,4 @@
-command -v zsh >/dev/null 2>&1 || {
+hash zsh 2>/dev/null || {
 	echo >&2 "Zsh is not installed. Aborting."
 	exit 1
 }
