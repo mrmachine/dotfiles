@@ -18,6 +18,7 @@ Includes the following features:
   collaborative castles.
 * Aliases: `ls`, `ps`, `st` ([SourceTree][3]), `sup` and `supctl`
   ([Supervisor][4]), and `sub` ([Sublime Text][5]).
+* Use Sublime Text as the default editor.
 * Sublime Text [preferences][6] and plugins including: [Anaconda][7],
   [EditorConfig][8] , [GitGutter][9], and [Package Control][10].
 * Global [EditorConfig][11] preferences.
