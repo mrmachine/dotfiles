@@ -8,23 +8,17 @@ if [ -d ~/.homesick ]; then
 	exit 1
 fi
 
-if [ ! -d ~/.homesick/repos/homeshick ]; then
-	echo "Installing Homeshick."
-	git clone https://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
-	source ~/.homesick/repos/homeshick/homeshick.sh
-	homeshick link homeshick
-fi
+echo "Installing Homeshick."
+git clone https://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
+source ~/.homesick/repos/homeshick/homeshick.sh
+homeshick link homeshick
 
-if [ ! -d ~/.homesick/repos/prezto ]; then
-	echo "Installing Prezto."
-	homeshick clone sorin-ionescu/prezto
-fi
+echo "Installing Prezto."
+homeshick clone sorin-ionescu/prezto
 
-if [ ! -d ~/.homesick/repos/dotfiles ]; then
-	echo "Installing dotfiles."
-	homeshick clone -b mrmachine/dotfiles
-	homeshick link dotfiles
-fi
+echo "Installing dotfiles."
+homeshick clone -b mrmachine/dotfiles
+homeshick link dotfiles
 
 ZSH=`which zsh`
 
