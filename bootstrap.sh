@@ -3,6 +3,11 @@ command -v zsh >/dev/null 2>&1 || {
 	exit 1
 }
 
+if [ -d ~/.homesick ]; then
+	echo >&2 "~/.homesick directory already exists. Aborting."
+	exit 1
+fi
+
 if [ ! -d ~/.homesick/repos/homeshick ]; then
 	echo "Installing Homeshick."
 	git clone https://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
