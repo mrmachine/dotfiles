@@ -13,9 +13,9 @@ Includes the following features:
   `syntax-highlighting`, and `history-substring-search`.
 * Enable optional Prezto configuration: `dot-expansion` (editor),
   `highlighters` (syntax-highlighting), and `auto-title` (terminal).
-* Source multiple Zsh rc scripts from `~/.zsh/rc.d` and combine multiple SSH
-  config files from `~/.ssh/config.d`, making it easy to mixin partial dotfiles
-  from multiple collaborative castles.
+* Source Zsh rc scripts from `~/.zsh/rc.d` and combine SSH config files from
+  `~/.ssh/config.d`, making it easy to mixin partial dotfiles from
+  collaborative castles.
 * Aliases: `ls`, `ps`, `st` ([SourceTree][3]), `sup` and `supctl`
   ([Supervisor][4]), and `sub` ([Sublime Text][5]).
 * Sublime Text [preferences][6] and plugins including: [Anaconda][7],
