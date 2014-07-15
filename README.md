@@ -20,9 +20,9 @@ Includes the following features:
   ([Supervisor][4]), and `sub` ([Sublime Text][5]).
 * Sublime Text [preferences][6] and plugins including: [Anaconda][7],
   [EditorConfig][8] , [GitGutter][9], and [Package Control][10].
-* Editorconfig.
+* Global [EditorConfig][11] preferences.
 * Global ignores for Git and Mercurial.
-* Terminal.app themes based on the [Base16][11] colour scheme.
+* Terminal.app themes based on the [Base16][12] colour scheme.
 
 You should add to, delete, extend or replace the default configuration as you
 see fit, then commit and push your changes to a remote repository.
@@ -37,4 +37,5 @@ see fit, then commit and push your changes to a remote repository.
 [8]: https://github.com/sindresorhus/editorconfig-sublime
 [9]: https://github.com/jisaacks/GitGutter
 [10]: https://github.com/wbond/sublime_package_control
-[11]: https://github.com/chriskempson/base16
+[11]: http://editorconfig.org
+[12]: https://github.com/chriskempson/base16
