@@ -11,14 +11,17 @@ fi
 echo "Installing Homeshick."
 git clone https://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
 source ~/.homesick/repos/homeshick/homeshick.sh
-homeshick link homeshick
 
-echo "Installing Prezto."
-homeshick clone sorin-ionescu/prezto
-
-echo "Installing dotfiles."
+echo "Cloning Homeshick castles."
+homeshick clone -b DamnWidget/anaconda
+homeshick clone -b jisaacks/GitGutter
 homeshick clone -b mrmachine/dotfiles
-homeshick link dotfiles
+homeshick clone -b sindresorhus/editorconfig-sublime
+homeshick clone -b sorin-ionescu/prezto
+homeshick clone -b wbond/sublime_package_control
+
+echo "Linking Homeshick castles."
+homeshick link
 
 ZSH=`which zsh`
 
@@ -27,4 +30,4 @@ if [ $ZSH != $SHELL ]; then
 	chsh -s $ZSH
 fi
 
-echo "Prezto and Zsh installed. Open a new terminal window or tab."
+echo "Installed. Open a new terminal window or tab."
