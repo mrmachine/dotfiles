@@ -18,6 +18,7 @@ homeshick clone -b jisaacks/GitGutter
 homeshick clone -b mrmachine/dotfiles
 homeshick clone -b sindresorhus/editorconfig-sublime
 homeshick clone -b sorin-ionescu/prezto
+homeshick clone -b squ1b3r/Djaneiro
 homeshick clone -b wbond/sublime_package_control
 
 echo "Linking Homeshick castles."
