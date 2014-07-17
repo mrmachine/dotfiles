@@ -1,19 +1,19 @@
 {
+	"always_show_minimap_viewport": true,
 	"anaconda_gutter_theme": "alpha",
 	"anaconda_linter_mark_style": "none",
 	"auto_complete_commit_on_tab": true,
+	"auto_find_in_selection": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
 	"complete_parameters": true,
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"fold_buttons": false,
 	"font_size": 12.0,
 	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+	"highlight_modified_tabs": true,
 	"pyflakes_ignore_import_*": false,
 	"pylint_ignore":
 	[
@@ -23,6 +23,8 @@
 		79,
 		131
 	],
+	"show_encoding": true,
+	"show_line_endings": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
 	"word_wrap": false,
