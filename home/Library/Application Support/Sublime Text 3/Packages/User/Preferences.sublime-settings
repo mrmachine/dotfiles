@@ -14,7 +14,6 @@
 	[
 		"Vintage"
 	],
-	"pep257": true,
 	"pyflakes_ignore_import_*": false,
 	"pylint_ignore":
 	[
