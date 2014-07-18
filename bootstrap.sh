@@ -28,6 +28,9 @@ ZSH="$(which zsh)"
 
 if [ $ZSH != $SHELL ]; then
 	echo "Changing shell to Zsh."
+	if [ -z "$(grep $ZSH /etc/shells)" ]; then
+		echo $ZSH | sudo tee -a /etc/shells
+	fi
 	chsh -s $ZSH
 fi
 
