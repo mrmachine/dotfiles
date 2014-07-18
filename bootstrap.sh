@@ -24,7 +24,7 @@ homeshick clone -b wbond/sublime_package_control
 echo "Linking Homeshick castles."
 homeshick link
 
-ZSH=`which zsh`
+ZSH="$(which zsh)"
 
 if [ $ZSH != $SHELL ]; then
 	echo "Changing shell to Zsh."
