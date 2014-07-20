@@ -30,4 +30,14 @@ echo "Cloning Homeshick castles."
 echo "Linking Homeshick castles."
 homeshick link
 
-echo "Installed. Open a new terminal window or tab."
+cat <<EOF
+
+Installed. Open a new terminal window or tab.
+If you have any private Homeshick castles, you should clone and link them:
+
+    homeshick clone <username>/<repository> (GitHub shortcut)
+    homeshick clone https://bitbucket.org/<username>/<repository>.git (HTTPS)
+    homeshick clone git@bitbucket.org:<username>/<repository>.git (SSH)
+    homeshick link <repository>
+
+EOF
