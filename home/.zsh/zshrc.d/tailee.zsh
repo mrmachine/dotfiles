@@ -1,7 +1,3 @@
-#
-# Aliases.
-#
-
 # ls.
 alias ls='ls -FG'
 
@@ -17,14 +13,3 @@ alias supctl='supervisorctl -c $HOME/etc/supervisor/supervisord.conf '
 
 # Sublime Text.
 alias sub='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
-
-#
-# Exports.
-#
-
-# Use Sublime Text as the default editor.
-export EDITOR="subl -n -w"
-export VISUAL=$EDITOR
-
-# Add ~/bin to `PATH`.
-export PATH=$HOME/bin:$PATH
