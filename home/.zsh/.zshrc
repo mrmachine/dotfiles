@@ -3,7 +3,7 @@
 
 source ${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc
 
-# Source `rc.d/*.zsh` scripts.
-for filename in ${ZDOTDIR:-$HOME}/rc.d/*.zsh; do
+# Source `zshrc.d/*.zsh` scripts.
+for filename in ${ZDOTDIR:-$HOME}/zshrc.d/*.zsh(N); do
 	source $filename
 done
