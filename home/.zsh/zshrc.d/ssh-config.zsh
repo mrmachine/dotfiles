@@ -1,5 +1,5 @@
 # Combine SSH configs.
-if [ -f ~/.ssh/config ]; then
+if [[ -f ~/.ssh/config ]]; then
 	HEAD="# This file has been automatically generated. Do not edit directly."
 	if [[ `head -n 1 ~/.ssh/config` != $HEAD ]]; then
 		mkdir -p ~/.ssh/config.d
