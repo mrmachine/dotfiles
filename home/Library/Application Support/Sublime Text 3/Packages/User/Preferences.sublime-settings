@@ -14,6 +14,10 @@
 	"font_size": 12.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"pyflakes_ignore_import_*": false,
 	"pylint_ignore":
 	[
