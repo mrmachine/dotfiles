@@ -1,5 +1,6 @@
 # `.zlogout' is sourced when login shells exit.
 
+# Source Prezto defaults.
 source ${ZDOTDIR:-$HOME}/.zprezto/runcoms/zlogout
 
 # Source `zlogout.d/*.zsh` scripts.

@@ -3,6 +3,7 @@
 # the two are not intended to be used together, although this could certainly
 # be done if desired.
 
+# Source Prezto defaults.
 source ${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile
 
 # Source `zprofile.d/*.zsh` scripts.

@@ -3,6 +3,7 @@
 # other important environment variables. `.zshenv' should not contain commands
 # that produce output or assume the shell is attached to a tty.
 
+# Source Prezto defaults.
 source ${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv
 
 # Source `zshenv.d/*.zsh` scripts.

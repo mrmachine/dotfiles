@@ -1,5 +1,6 @@
 # Sets Prezto options.
 
+# Source Prezto defaults.
 source ${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc
 
 # Source `zpreztorc.d/*.zsh` scripts.

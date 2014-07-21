@@ -5,6 +5,7 @@
 # be used to set the terminal type and run a series of external commands
 # (fortune, msgs, etc).
 
+# Source Prezto defaults.
 source ${ZDOTDIR:-$HOME}/.zprezto/runcoms/zlogin
 
 # Source `zlogin.d/*.zsh` scripts.
