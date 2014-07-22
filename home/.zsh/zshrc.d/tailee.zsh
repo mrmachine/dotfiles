@@ -13,3 +13,9 @@ alias supctl='supervisorctl -c $HOME/etc/supervisor/supervisord.conf '
 
 # Sublime Text.
 alias sub='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
+
+# Fix crash on `workon` tab completion. Caused by Prezto using
+# `virtualenvwrapper_lazy.sh`.
+if (( $+commands[virtualenvwrapper.sh] )); then
+  source "$commands[virtualenvwrapper.sh]"
+fi
