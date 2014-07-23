@@ -1,12 +1,9 @@
 {
 	"always_show_minimap_viewport": true,
-	"anaconda_gutter_theme": "alpha",
-	"anaconda_linter_mark_style": "none",
 	"auto_complete_commit_on_tab": true,
 	"auto_find_in_selection": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
-	"complete_parameters": true,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
@@ -18,7 +15,6 @@
 	[
 		"Vintage"
 	],
-	"pyflakes_ignore_import_*": false,
 	"rulers":
 	[
 		79,
