@@ -19,9 +19,6 @@
 		"Vintage"
 	],
 	"pyflakes_ignore_import_*": false,
-	"pylint_ignore":
-	[
-	],
 	"rulers":
 	[
 		79,
