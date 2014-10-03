@@ -7,24 +7,24 @@ A bootstrap script for [Homeshick][1], [Prezto][2] and my personal dotfiles.
 
 Includes the following features:
 
-* Keep `~` clean by placing Zsh dotfiles in `~/.zsh`.
-* Enable optional Prezto modules: `archive`, `git`, `homebrew`, `node`, `osx`,
-  `python`, `rsync`, `screen`, `wakeonlan`, `terminal`, `fasd`,
-  `syntax-highlighting`, and `history-substring-search`.
-* Enable optional Prezto configuration: `dot-expansion` (editor),
-  `highlighters` (syntax-highlighting), and `auto-title` (terminal).
-* Source Zprezto and Zsh scripts and combine SSH config files from
-  `~/.zsh/zprezto.d`, `~/.zsh/zshrc.d`, `~/.ssh/config.d`, etc., making it easy
-  to mixin partial dotfiles from collaborative castles.
-* Aliases: `ls`, `ps`, `st` ([SourceTree][3]), `sup` and `supctl`
-  ([Supervisor][4]), and `sub` ([Sublime Text][5]).
-* Use Sublime Text as the default editor.
-* Sublime Text [preferences][6] and plugins including: [Anaconda][7],
-  [Djaneiro][8], [EditorConfig][9] , [GitGutter][10], and
-  [Package Control][11].
-* Global [EditorConfig][12] preferences.
-* Global ignores for Git and Mercurial.
-* Terminal.app themes based on the [Base16][13] colour scheme.
+  * Keep `~` clean by placing Zsh dotfiles in `~/.zsh`.
+  * Enable optional Prezto modules: `archive`, `git`, `homebrew`, `node`,
+    `osx`, `python`, `rsync`, `screen`, `wakeonlan`, `terminal`, `fasd`,
+    `syntax-highlighting`, and `history-substring-search`.
+  * Enable optional Prezto configuration: `dot-expansion` (editor),
+    `highlighters` (syntax-highlighting), and `auto-title` (terminal).
+  * Source Zprezto and Zsh scripts and combine SSH config files from
+    `~/.zsh/zprezto.d`, `~/.zsh/zshrc.d`, `~/.ssh/config.d`, etc., making it
+    easy to mixin partial dotfiles from collaborative castles.
+  * Aliases: `ls`, `ps`, `st` ([SourceTree][3]), `sup` and `supctl`
+    ([Supervisor][4]), and `sub` ([Sublime Text][5]).
+  * Use Sublime Text as the default editor.
+  * Sublime Text [preferences][6] and plugins including: [Anaconda][7],
+    [Djaneiro][8], [EditorConfig][9] , [GitGutter][10], and
+    [Package Control][11].
+  * Global [EditorConfig][12] preferences.
+  * Global ignores for Git and Mercurial.
+  * Terminal.app themes based on the [Base16][13] colour scheme.
 
 You should add to, delete, extend or replace the default configuration as you
 see fit, then commit and push your changes to a remote repository.
