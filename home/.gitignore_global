@@ -2,4 +2,5 @@
 *.py[co]
 *.sublime-workspace
 *~
+.anaconda
 .DS_Store
