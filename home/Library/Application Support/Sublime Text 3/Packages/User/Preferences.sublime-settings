@@ -26,6 +26,5 @@
 	"show_line_endings": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
-	"word_wrap": false,
-	"wrap_width": 80
+	"word_wrap": false
 }
