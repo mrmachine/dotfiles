@@ -17,7 +17,7 @@ alias supctl='supervisorctl -c $HOME/etc/supervisor/supervisord.conf '
 # Sublime Text.
 alias sub='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 
-# virtualenvwrapper.
+# pyenv-virtualenvwrapper.
 if (( $+commands[pyenv] )); then
 	unset VIRTUAL_ENV_DISABLE_PROMPT  # Re-enable prompt, disabled by prezto.
 	pyenv virtualenvwrapper
