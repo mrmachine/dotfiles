@@ -13,6 +13,9 @@ trim_trailing_whitespace = true
 [*.{html,js,json}]
 indent_size = 2
 
+[*.{bat,iss}]
+end_of_line = crlf
+
 [*.{md,py,rst}]
 indent_size = 4
 indent_style = space
