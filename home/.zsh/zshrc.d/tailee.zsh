@@ -1,3 +1,6 @@
+# Interaction Consortium Projects.
+alias icprojects='cd ~/IC/Projects'
+
 # ls.
 alias ls='ls -FG'
 
