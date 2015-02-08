@@ -14,6 +14,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"GitGutter",
 		"Vintage"
 	],
 	"rulers":
