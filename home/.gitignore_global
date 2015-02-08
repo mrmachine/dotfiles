@@ -1,4 +1,3 @@
-*.orig
 *.py[co]
 *.sublime-workspace
 *~
