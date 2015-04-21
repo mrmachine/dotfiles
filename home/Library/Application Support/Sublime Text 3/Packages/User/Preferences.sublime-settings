@@ -8,6 +8,8 @@
     "enable_tab_scrolling": false,
     "ensure_newline_at_eof_on_save": true,
     "file_exclude_patterns": [
+        "*.sqlite3",
+        ".coverage",
         "*.pyc",
         "*.pyo",
         "*.exe",
