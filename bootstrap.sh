@@ -20,6 +20,7 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 echo "Cloning Homeshick castles."
 [ ! -d "$HOME/.homesick/repos/anaconda" ] && homeshick clone -b DamnWidget/anaconda
+[ ! -d "$HOME/.homesick/repos/base16-osx-color-palette" ] && homeshick clone -b chriskempson/base16-osx-color-palette
 [ ! -d "$HOME/.homesick/repos/Djaneiro" ] && homeshick clone -b squ1b3r/Djaneiro
 [ ! -d "$HOME/.homesick/repos/dotfiles" ] && homeshick clone -b mrmachine/dotfiles
 [ ! -d "$HOME/.homesick/repos/editorconfig-sublime" ] && homeshick clone -b sindresorhus/editorconfig-sublime
