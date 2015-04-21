@@ -22,3 +22,6 @@ if (( $+commands[pyenv] )); then
 	unset VIRTUAL_ENV_DISABLE_PROMPT  # Re-enable prompt, disabled by prezto.
 	pyenv virtualenvwrapper
 fi
+
+# Zsh options.
+setopt INTERACTIVE_COMMENTS
