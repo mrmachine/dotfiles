@@ -1,5 +1,5 @@
 # Use Sublime Text as the default editor.
-export EDITOR="subl -n -w"
+export EDITOR='subl -n -w'
 export VISUAL=$EDITOR
 
 # Use Sublime Text as the editor for Nose Progressive.
