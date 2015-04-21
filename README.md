@@ -1,7 +1,8 @@
 Overview
 ========
 
-A bootstrap script for [Homeshick][homeshick], [Prezto][prezto] and my personal dotfiles.
+A bootstrap script for [Homeshick][homeshick], [Prezto][prezto] and my personal
+dotfiles.
 
 	curl -L http://bit.ly/mrmachine-dotfiles | sh
 
