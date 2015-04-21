@@ -1,8 +1,7 @@
 # Combine SSH configs.
-if [[ -f ~/.ssh/config ]]; then
+if [[ -d ~/.ssh/config.d ]]; then
 	HEAD="# This file has been automatically generated. Do not edit directly."
-	if [[ `head -n 1 ~/.ssh/config` != $HEAD ]]; then
-		mkdir -p ~/.ssh/config.d
+	if [[ -f ~/.ssh/config && `head -n 1 ~/.ssh/config` != $HEAD ]]; then
 		mv ~/.ssh/config ~/.ssh/config.d/000-original
 	fi
 	echo $HEAD >! ~/.ssh/config
