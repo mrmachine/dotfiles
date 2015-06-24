@@ -11,3 +11,6 @@ export PATH=$HOME/bin:$PATH
 # Go.
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Homebrew.
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
