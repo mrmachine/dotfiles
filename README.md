@@ -1,8 +1,8 @@
 Overview
 ========
 
-A bootstrap script for [Homeshick][homeshick], [Prezto][prezto] and my personal
-dotfiles.
+A bootstrap script for [Homeshick][homeshick], [Prezto][prezto],
+[Homebrew][homebrew] and my personal dotfiles.
 
 	curl -L http://bit.ly/mrmachine-dotfiles | sh
 
@@ -31,12 +31,15 @@ Includes the following features:
   * Global ignores for Git and Mercurial.
   * Terminal.app themes and color palettes based on the [Base16][base16]
     colour scheme.
+  * Global [Brewfile][homebrew-brewfile] for command line and GUI apps.
 
 You should add to, delete, extend or replace the default configuration as you
 see fit, then commit and push your changes to a remote repository.
 
 [base16]: https://github.com/chriskempson/base16
 [editorconfig]: http://editorconfig.org
+[homebrew]: http://brew.sh
+[homebrew-brewfile]: https://github.com/Homebrew/homebrew-bundle
 [homeshick]: https://github.com/andsens/homeshick/
 [nose-progressive]: https://github.com/erikrose/nose-progressive
 [prezto]: https://github.com/sorin-ionescu/prezto/

@@ -1,20 +1,13 @@
-hash zsh 2>/dev/null || {
-	echo >&2 "Zsh is not installed. Aborting."
-	exit 1
-}
+#!/bin/bash
 
-ZSH="$(which zsh)"
-if [ "$ZSH" != "$SHELL" ]; then
-	echo "Changing shell to Zsh."
-	if [ -z "$(grep $ZSH /etc/shells)" ]; then
-		echo "$ZSH" | sudo tee -a /etc/shells
-	fi
-	chsh -s "$ZSH"
-fi
+# Ask for the administrator password and keep-alive.
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Dotfiles.
 if [ ! -d "$HOME/.homesick/repos/homeshick" ]; then
-	echo "Installing Homeshick."
-	git clone https://github.com/andsens/homeshick.git "$HOME/.homesick/repos/homeshick"
+    echo "Installing Homeshick."
+    git clone https://github.com/andsens/homeshick.git "$HOME/.homesick/repos/homeshick"
 fi
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
@@ -31,14 +24,90 @@ echo "Cloning Homeshick castles."
 echo "Linking Homeshick castles."
 homeshick link
 
+# Homebrew.
+echo "Installing Homebrew."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Caskroom.
+echo "Installing Caskroom."
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+brew install caskroom/cask/brew-cask
+
+# Brewfile.
+echo "Installing brews and casks."
+brew tap homebrew/bundle
+brew bundle --global
+
+# Node.
+echo "Installing Bower."
+npm install -g bower
+
+# PostgreSQL.
+echo "Configuring PostgreSQL."
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+# pyenv.
+echo "Configuring pyenv."
+touch ~/.profile_homebrew
+echo '# pyenv.' >> ~/.profile_homebrew
+echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.profile_homebrew
+echo 'if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi' >> ~/.profile_homebrew
+source ~/.profile_homebrew
+
+# Python.
+echo "Installing Python versions."
+pyenv install 2.7.10
+pyenv install 3.2.6
+pyenv install 3.3.6
+pyenv install 3.4.3
+pyenv global 2.7.10 3.4.3 3.3.6 3.2.6
+echo "Installing Python packages."
+pip install -U pip
+pip install django  # For `django-admin.py startproject`.
+pip install ipython
+pip install tox
+
+# Zsh.
+hash zsh 2>/dev/null || {
+    echo >&2 "Zsh is not installed. Aborting."
+    exit 1
+}
+ZSH="$(which zsh)"
+if [ "$ZSH" != "$SHELL" ]; then
+    echo "Changing shell to Zsh."
+    if [ -z "$(grep $ZSH /etc/shells)" ]; then
+        echo "$ZSH" | sudo tee -a /etc/shells
+    fi
+    chsh -s "$ZSH"
+fi
+
+# Now the manual steps.
 cat <<EOF
 
-Installed. Open a new terminal window or tab.
+Homeshick and castles installed. Open a new terminal window or tab for dotfiles
+to take effect.
+
 If you have any private Homeshick castles, you should clone and link them:
 
     homeshick clone <username>/<repository> (GitHub shortcut)
     homeshick clone https://bitbucket.org/<username>/<repository>.git (HTTPS)
     homeshick clone git@bitbucket.org:<username>/<repository>.git (SSH)
     homeshick link <repository>
+
+Additional manual configuration:
+
+* Comment out the `source virtualenvwrapper.sh` line from `prezto/modules/python/init.zsh`.
+* Use [SuperGenPass](http://www.supergenpass.com/) to generate your iCloud and Dropbox passwords.
+* Login to iCloud in System Preferences.
+* Login to Dropbox and sync your 1Password vaults.
+* Open your primary and shared 1Password vaults from Dropbox.
+* Install the 1Password browser extensions.
+* Register any trial software with licenses from 1Password vaults (1Password, Arq, Carbon Copy Cloner, iStat Menus, Moom, OmniGraffle, SourceTree, Sublime Text, Transmit, VMware Fusion, etc.)
+* Configure hourly Arq backups to a NAS (SFTP) and daily backups to the cloud (Dropbox, Google Nearline, etc.)
+* Configure BitTorrent Sync and connect shares.
+* Configure daily Carbon Copy Cloner backups to a disk image (NAS) or locally attached disk.
+* Configure Internet Accounts in System Preferences (e.g. Facebook, Google, etc.)
+* Configure sync in Google Chrome and Firefox.
 
 EOF
