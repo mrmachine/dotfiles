@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Activity Monitor, Network
+# Network Graph Type: [DATA]
+defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
+
 # Contacts, Preferences, General
 # Show First Name: [x] Before last name
 # Sort By: [Last Name]
