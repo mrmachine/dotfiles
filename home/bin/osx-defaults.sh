@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# 1Password, Preferences, Watchtower
+# [x] Enable 1Password Watchtower
+defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper watchtowerService -int 1
+
+# 1Password, Preferences, Browser
+# [ ] Automatically submit logins after filling
+defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper autosubmit -int 0
+
+# 1Password, Preferences, Advanced
+# [ ] Verify browser code signature
+defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper OPPrefBrowserCodesigningRequirementDisabled -int 1
+
 # Activity Monitor, Network
 # Network Graph Type: [DATA]
 defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
