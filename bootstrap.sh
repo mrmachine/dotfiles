@@ -109,5 +109,6 @@ Additional manual configuration:
 * Configure daily Carbon Copy Cloner backups to a disk image (NAS) or locally attached disk.
 * Configure Internet Accounts in System Preferences (e.g. Facebook, Google, etc.)
 * Configure sync in Google Chrome and Firefox.
+* Enable TRIM for SSDs: `sudo trimforce enable`.
 
 EOF
