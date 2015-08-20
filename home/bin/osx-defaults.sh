@@ -193,6 +193,25 @@ Here are some more defaults that need to be set manually:
     Finder, View, Show View Options (tailee)
         [x] Show Library Folder
 
+    iTunes, View
+        [x] Show Status Bar
+
+    iTunes, Preferences, General
+        Ratings: [Stars & Loves]
+
+    iTunes, Preferences, General, Import Settings...
+        [x] Use error correction when reading Audio CDs
+
+    iTunes, Preferences, Sharing
+        [x] Share my library on my local network
+        [x] Home Sharing computers and devices update play counts
+
+    iTunes, Preferences, Advanced
+        [ ] Copy files to iTunes Media folder when adding to library
+
+    Macs Fan Control, Preferences, General
+        [x] Autostart minimized with system
+
     System Preferences, General
         Default web browser: Google Chrome
 
