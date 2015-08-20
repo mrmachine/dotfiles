@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# 1Password, View, Item List Layout, Top
+defaults write com.agilebits.onepassword4 MainWindowLayout 'H'
+
 # 1Password, Preferences, Watchtower
 # [x] Enable 1Password Watchtower
 defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper watchtowerService -int 1
