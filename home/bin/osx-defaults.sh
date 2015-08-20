@@ -35,10 +35,7 @@ defaults write com.apple.finder ShowStatusBar -int 1
 # Grid spacing: 100
 # Label position: [x] Right
 # Sort by: [Name]
-defaults write com.apple.finder DesktopViewSettings IconViewSettings iconSize -int 48
-defaults write com.apple.finder DesktopViewSettings IconViewSettings gridSpacing -int 100
-defaults write com.apple.finder DesktopViewSettings IconViewSettings labelOnBottom -int 0
-defaults write com.apple.finder DesktopViewSettings IconViewSettings arrangeBy 'name'
+defaults write com.apple.finder DesktopViewSettings '{ "IconViewSettings" = { "iconSize" = 48; "gridSpacing" = 100; "labelOnBottom" = 0; "arrangeBy" = "name"; }; }'
 
 # Safari, Preferences, Advanced
 # Smart Search Field: [x] Show full website address
