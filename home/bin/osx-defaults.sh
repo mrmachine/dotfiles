@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# 1Password, View, Item List Layout, Top
+# 1Password, View, Item List Layout
+# [x] Top
 defaults write com.agilebits.onepassword4 MainWindowLayout 'H'
 
 # 1Password, Preferences, Watchtower
@@ -56,8 +57,10 @@ defaults write com.apple.finder ShowStatusBar -int 1
 # Sort by: [Name]
 defaults write com.apple.finder DesktopViewSettings '{ "IconViewSettings" = { "iconSize" = 48; "gridSpacing" = 100; "labelOnBottom" = 0; "arrangeBy" = "name"; }; }'
 
-# Macs Fan Control,
-# HDD, Custom, Sensor-based value: [WDC...], [42]c, [52]c
+# Macs Fan Control, HDD, Custom
+# [x] Sensor-based value: (HDD)
+# Temperature that fan speed will start to increase from: [42]
+# Maximum temperature: [52]
 defaults write com.crystalidea.macsfancontrol Fan_1 '2,WDC WD40EFRX-68WT0N0,42,52'
 
 # Safari, Preferences, General
@@ -213,7 +216,7 @@ Here are some more defaults that need to be set manually:
         [x] Autostart minimized with system
 
     System Preferences, General
-        Default web browser: Google Chrome
+        Default web browser: [Google Chrome]
 
     System Preferences, Desktop & Screen Saver, Desktop
         [x] Change picture [every 30 minutes]
