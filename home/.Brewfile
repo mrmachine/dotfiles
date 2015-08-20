@@ -29,6 +29,7 @@ cask 'firefox'
 # cask 'fontexplorer-x-pro'
 cask 'google-chrome'  # Install manually for App Store 1Password compatibility
 cask 'istat-menus'
+cask 'macs-fan-control'
 # cask 'microsoft-office'
 cask 'moom'
 cask 'omnigraffle'

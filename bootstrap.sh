@@ -110,5 +110,6 @@ Additional manual configuration:
 * Configure Internet Accounts in System Preferences (e.g. Facebook, Google, etc.)
 * Configure sync in Google Chrome and Firefox.
 * Enable TRIM for SSDs: `sudo trimforce enable`.
+* Configure `Macs Fan Control` to autostart minimized with system.
 
 EOF
