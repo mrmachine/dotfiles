@@ -111,5 +111,12 @@ Additional manual configuration:
 * Configure sync in Google Chrome and Firefox.
 * Enable TRIM for SSDs: `sudo trimforce enable`.
 * Configure `Macs Fan Control` to autostart minimized with system.
+* Configure iTunes:
+    * View, [Show Status Bar]
+    * Preferences, General, Ratings: [Stars & Loves]
+    * Preferences, General, Import Settings..., [x] Use error correction when reading Audio CDs
+    * Preferences, Sharing, [x] Share my library on my local network
+    * Preferences, Sharing, [x] Home Sharing computers and devices update play counts
+    * Preferences, Advanced, [ ] Copy files to iTunes Media folder when adding to library
 
 EOF
