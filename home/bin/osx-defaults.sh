@@ -53,9 +53,25 @@ defaults write com.apple.finder ShowStatusBar -int 1
 # Sort by: [Name]
 defaults write com.apple.finder DesktopViewSettings '{ "IconViewSettings" = { "iconSize" = 48; "gridSpacing" = 100; "labelOnBottom" = 0; "arrangeBy" = "name"; }; }'
 
+# Safari, Preferences, General
+# Safari opens with: [All windows from last session]
+# [ ] Open "safe" files after downloading
+defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -int 1
+defaults write com.apple.Safari AutoOpenSafeDownloads -int 0
+
+# Safari, Preferences, Privacy
+# Website tracking: [x] Ask websites not to track me
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -int 1
+
+# Safari, Preferences, Notifications
+# [ ] Allow websites to ask for permission to send push notifications
+defaults write com.apple.Safari CanPromptForPushNotifications -int 0
+
 # Safari, Preferences, Advanced
 # Smart Search Field: [x] Show full website address
+# [x] Show Develop menu in menu bar
 defaults write com.apple.Safari ShowFullURLInSmartSearchField -int 1
+defaults write com.apple.Safari IncludeDevelopMenu -int 1
 
 # Safari, View
 # [x] Show Status Bar
