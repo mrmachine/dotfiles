@@ -83,6 +83,7 @@ echo "Installing Python packages."
 pip install -U pip
 pip install django  # For `django-admin.py startproject`.
 pip install ipython
+pip install supervisor
 pip install tox
 
 # Zsh.
