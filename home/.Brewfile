@@ -60,7 +60,7 @@ brew 'lame'
 brew 'mercurial'
 brew 'nginx'
 brew 'node'
-brew 'postgresql'
+# brew 'postgresql'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'pyenv-virtualenvwrapper'
@@ -71,6 +71,7 @@ brew 'sqlite'
 
 cask 'github'
 cask 'port-map'
+cask 'postgres'
 cask 'sourcetree'
 
 # Personal GUI
