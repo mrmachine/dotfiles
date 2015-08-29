@@ -77,7 +77,7 @@ cask 'eyetv'
 cask 'handbrake'
 cask 'plex-home-theater'
 cask 'plex-media-server'
-cask 'sketchup'
+# cask 'sketchup'
 cask 'steam'
 cask 'wacom-tablet'
 
