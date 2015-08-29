@@ -13,6 +13,7 @@ brew 'p7zip'
 brew 'unrar'
 brew 'wakeonlan'
 brew 'wget'
+# brew 'znc'
 brew 'zsh'
 
 # General GUI
