@@ -8,7 +8,7 @@ tap 'homebrew/versions'
 
 brew 'git'
 brew 'htop-osx'
-brew 'openzfs'
+# brew 'openzfs'
 brew 'p7zip'
 brew 'unrar'
 brew 'wakeonlan'
