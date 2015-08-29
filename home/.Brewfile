@@ -12,6 +12,7 @@ brew 'htop-osx'
 brew 'p7zip'
 brew 'unrar'
 brew 'wakeonlan'
+brew 'wget'
 brew 'zsh'
 
 # General GUI
@@ -62,7 +63,6 @@ brew 'pyenv-virtualenv'
 brew 'pyenv-virtualenvwrapper'
 brew 'sloccount'
 brew 'sqlite'
-brew 'wget'
 
 # Developer GUI
 
