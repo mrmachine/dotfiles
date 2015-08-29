@@ -25,6 +25,22 @@ echo "Cloning Homeshick castles."
 echo "Linking Homeshick castles."
 homeshick link
 
+# Crontab.
+crontab - <<EOF
+MAILTO=real.human@mrmachine.net
+PATH=/Users/tailee/.pyenv/shims:/Users/tailee/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+SHELL=/usr/local/bin/zsh
+
+@reboot  always.sh
+
+# minute  hour  day/month  month  day/week  command
+
+*  *  *    *  *    always.sh
+0  0  *    *  *    daily.sh
+0  1  *    *  tue  weekly.sh
+0  1  1-7  *  wed  monthly.sh
+EOF
+
 # Homebrew.
 echo "Installing Homebrew."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
