@@ -20,6 +20,14 @@ defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper OPPrefBrowserCodesig
 # Network Graph Type: [DATA]
 defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
 
+# Aperture, Preferences, Appearance
+# [x] Show number of versions for projects and albums
+defaults write com.apple.Aperture showProjectVersionCount -int 1
+
+# Aperture, Crop
+# [x] Show Guides
+defaults write com.apple.Aperture CropGuidesOnOff -int 1
+
 # Contacts, Preferences, General
 # Show First Name: [x] Before last name
 # Sort By: [Last Name]
@@ -144,6 +152,14 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 
 defaults write -g AppleEnableSwipeNavigateWithScrolls -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -int 1
 
+# System Preferences, Network, (VPN)
+# [x] Show VPN status in menu bar
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/VPN.menu"
+
+# Menu Bar, VPN status
+# [x] Show Time Connected
+defaults write com.apple.networkConnect VPNShowTime -int 1
+
 # System Preferences, Dictation & Speech, Dictation
 # Shortcut: [Off]
 defaults write com.apple.HIToolbox AppleDictationAutoEnable -int 0
@@ -158,8 +174,12 @@ defaults write com.apple.menuextra.clock DateFormat 'h:mm'
 defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/User.menu"
 defaults write -g userMenuExtraStyle -int 2
 
+# VMware Fusion, Virtual Machine, Settings, Applications Menu
+# Show applications menu in menu bar: [Never]
+defaults write com.vmware.fusion showStartMenu3 -int 0
+
 # Kill affected applications
-killall Contacts Dock Finder Safari
+killall Contacts Dock Finder Safari "VMware Fusion Start Menu"
 
 cat <<EOF
 
