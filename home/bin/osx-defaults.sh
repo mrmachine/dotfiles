@@ -152,6 +152,10 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 
 defaults write -g AppleEnableSwipeNavigateWithScrolls -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -int 1
 
+# System Preferences, Sound
+# [x] Show volume in menu bar
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Volume.menu"
+
 # System Preferences, Network, (VPN)
 # [x] Show VPN status in menu bar
 defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/VPN.menu"
