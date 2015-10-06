@@ -1,3 +1,6 @@
+# Docker.
+eval "$(docker-machine env default)"
+
 # Interaction Consortium Projects.
 alias icprojects='cd ~/IC/Projects'
 
