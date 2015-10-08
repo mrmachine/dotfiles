@@ -22,6 +22,7 @@ cask '1password'  # Install from App Store for iCloud support
 cask 'adium'
 cask 'appzapper'
 cask 'arq'
+cask 'bartender'
 cask 'bittorrent-sync'
 cask 'caffeine'
 cask 'carbon-copy-cloner'
