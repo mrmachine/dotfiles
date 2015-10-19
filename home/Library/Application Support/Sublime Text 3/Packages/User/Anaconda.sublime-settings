@@ -2,5 +2,7 @@
 	"anaconda_gutter_theme": "alpha",
 	"anaconda_linter_mark_style": "none",
 	"complete_parameters": true,
+    "enable_signatures_tooltip": false,
+    "enable_docstrings_tooltip": false,
 	"pyflakes_ignore_import_*": false
 }
