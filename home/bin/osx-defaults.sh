@@ -178,6 +178,15 @@ defaults write com.apple.menuextra.clock DateFormat 'h:mm'
 defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/User.menu"
 defaults write -g userMenuExtraStyle -int 2
 
+# System Preferences, Hazel, Trash
+# [x] Delete files sitting in the Trash for more than [1] [Week]
+# [x] Enable App Sweep
+# [x] Enable multi-user sweep
+defaults write com.noodlesoft.Hazel TrashPurgeOldFiles -int 1
+# TODO: Set [1] and [Week].
+defaults write com.noodlesoft.Hazel TrashUninstallApps -int 1
+defaults write com.noodlesoft.Hazel UninstallLogEnabled -int 1
+
 # VMware Fusion, Virtual Machine, Settings, Applications Menu
 # Show applications menu in menu bar: [Never]
 defaults write com.vmware.fusion showStartMenu3 -int 0
