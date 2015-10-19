@@ -5,6 +5,7 @@
     "auto_find_in_selection": true,
     "bold_folder_labels": true,
     "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"detect_indentation": false,
     "enable_tab_scrolling": false,
     "ensure_newline_at_eof_on_save": true,
     "file_exclude_patterns": [
