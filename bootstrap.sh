@@ -120,7 +120,7 @@ If you have any private Homeshick castles, you should clone and link them:
 
 Additional manual configuration:
 
-* Comment out the `source virtualenvwrapper.sh` line from `prezto/modules/python/init.zsh`.
+* Comment out the \`source virtualenvwrapper.sh\` line from \`prezto/modules/python/init.zsh\`.
 * Use [SuperGenPass](http://www.supergenpass.com/) to generate your iCloud and Dropbox passwords.
 * Login to iCloud in System Preferences.
 * Login to Dropbox and sync your 1Password vaults.
@@ -132,6 +132,6 @@ Additional manual configuration:
 * Configure daily Carbon Copy Cloner backups to a disk image (NAS) or locally attached disk.
 * Configure Internet Accounts in System Preferences (e.g. Facebook, Google, etc.)
 * Configure sync in Google Chrome and Firefox.
-* Enable TRIM for SSDs: `sudo trimforce enable`.
+* Enable TRIM for SSDs: \`sudo trimforce enable\`.
 
 EOF
