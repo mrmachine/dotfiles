@@ -74,7 +74,7 @@ brew 'sqlite'
 
 # Developer GUI
 
-cask 'github'
+cask 'github-desktop'
 cask 'port-map'
 cask 'postgres'
 cask 'sourcetree'
