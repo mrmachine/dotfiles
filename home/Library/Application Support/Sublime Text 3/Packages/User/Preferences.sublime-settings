@@ -52,6 +52,10 @@
         "Vintage"
     ],
 	"rulers": [
+	"indent_guide_options": [
+		"draw_normal",
+		"draw_active"
+	],
         72,
         79,
         131
