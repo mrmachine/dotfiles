@@ -92,3 +92,4 @@ cask 'wacom-tablet'
 
 # IC GUI
 # cask 'hipchat'
+# cask 'slack'
