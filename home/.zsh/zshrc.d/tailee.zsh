@@ -1,3 +1,9 @@
+# Django.
+alias dr='python manage.py runserver'
+alias drp='python manage.py runserver_plus'
+alias ds='python manage.py shell'
+alias dsp='python manage.py shell_plus'
+
 # Docker.
 eval "$(docker-machine env default)"
 
