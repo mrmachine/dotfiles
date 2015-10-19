@@ -39,6 +39,7 @@
         ".hg",
         ".svn",
         ".tox",
+		"__pycache__",
         "CVS",
         "htmlcov"
     ],
