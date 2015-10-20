@@ -1,68 +1,73 @@
 {
-    "always_show_minimap_viewport": true,
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_with_fields": true,
-    "auto_find_in_selection": true,
-    "bold_folder_labels": true,
-    "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"auto_find_in_selection": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
 	"detect_indentation": false,
-    "enable_tab_scrolling": false,
-    "ensure_newline_at_eof_on_save": true,
-    "file_exclude_patterns": [
-        "*.a",
-        "*.class",
-        "*.db",
-        "*.dll",
-        "*.dylib",
-        "*.exe",
-        "*.idb",
-        "*.lib",
-        "*.ncb",
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.a",
+		"*.class",
+		"*.db",
+		"*.dll",
+		"*.dylib",
+		"*.exe",
+		"*.idb",
+		"*.lib",
+		"*.ncb",
 		"*.obj",
 		"*.o",
-        "*.pdb",
-        "*.psd",
-        "*.pyc",
-        "*.pyo",
-        "*.sdf",
-        "*.so",
-        "*.sqlite3",
-        "*.sublime-workspace",
-        "*.suo",
-        ".coverage",
-        ".DS_Store"
-    ],
-    "find_selected_text": true,
+		"*.pdb",
+		"*.psd",
+		"*.pyc",
+		"*.pyo",
+		"*.sdf",
+		"*.so",
+		"*.sqlite3",
+		"*.sublime-workspace",
+		"*.suo",
+		".coverage",
+		".DS_Store"
+	],
+	"find_selected_text": true,
 	"fold_buttons": false,
-    "folder_exclude_patterns": [
-        "*.egg-info",
-        ".git",
-        ".hg",
-        ".svn",
-        ".tox",
+	"folder_exclude_patterns":
+	[
+		"*.egg-info",
+		".git",
+		".hg",
+		".svn",
+		".tox",
 		"__pycache__",
-        "CVS",
-        "htmlcov"
-    ],
-    "font_size": 12.0,
-    "highlight_line": true,
-    "highlight_modified_tabs": true,
-	"ignored_packages": [
-        "GitGutter",
-        "Vintage"
-    ],
-	"rulers": [
-	"indent_guide_options": [
+		"CVS",
+		"htmlcov"
+	],
+	"font_size": 12.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"GitGutter",
+		"Vintage"
+	],
+	"indent_guide_options":
+    [
 		"draw_normal",
 		"draw_active"
 	],
-        72,
-        79,
-        131
-    ],
-    "show_encoding": true,
-    "show_line_endings": true,
-    "trim_trailing_white_space_on_save": true,
-    "wide_caret": true,
-    "word_wrap": false
+	"rulers":
+	[
+		72,
+		79,
+		131
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_wrap": false
 }
