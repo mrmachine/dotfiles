@@ -258,6 +258,7 @@ Here are some more defaults that need to be set manually:
     System Preferences, Desktop & Screen Saver, Screen Saver
         [Shifting Tiles]
         Source: [National Geographic]
+        [x] Shuffle slide order
 
     System Preferences, Sharing
         [x] Screen Sharing
