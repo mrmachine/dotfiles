@@ -211,7 +211,7 @@ Here are some more defaults that need to be set manually:
         [x] AirDrop
         [x] Applications
         [x] Desktop
-        [x] Doctuments
+        [ ] Documents
         [x] Downloads
         [ ] Movies
         [ ] Music
