@@ -15,8 +15,9 @@ export PATH=$PATH:$GOPATH/bin
 # Homebrew.
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# Postgres.
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+# Postgres.app.
+export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/latest/lib:$DYLD_LIBRARY_PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Python
 export PYTHONWARNINGS=ignore
