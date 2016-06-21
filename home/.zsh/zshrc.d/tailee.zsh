@@ -16,6 +16,9 @@ alias ls='ls -FG'
 # ps.
 alias ps='ps -o pid,rss,pcpu,command'
 
+# scp.
+alias scpresume='rsync --partial --progress --rsh=ssh'
+
 # SourceTree.
 alias st='/Applications/SourceTree.app/Contents/Resources/stree'
 
