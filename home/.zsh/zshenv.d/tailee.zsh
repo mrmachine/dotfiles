@@ -17,3 +17,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Postgres.
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+# Python
+export PYTHONWARNINGS=ignore
