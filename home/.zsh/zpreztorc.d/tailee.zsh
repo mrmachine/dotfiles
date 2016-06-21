@@ -18,6 +18,7 @@ zstyle ':prezto:load' pmodule \
 	'osx' \
 	'python' \
 	'rsync' \
+	'ruby' \
 	'screen' \
 	'wakeonlan' \
 	'terminal' \
