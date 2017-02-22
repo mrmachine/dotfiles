@@ -21,6 +21,9 @@ export CFLAGS="-I$OPENSSL_PREFIX/include"
 export LDFLAGS="-L$OPENSSL_PREFIX/lib"
 export SWIG_FEATURES="-cpperraswarn -includeall -I$OPENSSL_PREFIX/include"
 
+# ICEkit.
+export MASTER_PASSWORD=abc123
+
 # Postgres.app.
 export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/latest/lib:$DYLD_LIBRARY_PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
