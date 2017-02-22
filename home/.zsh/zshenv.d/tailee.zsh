@@ -28,3 +28,7 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 # Python
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONWARNINGS=ignore
+
+# Build Python with framework/shared support (for PyInstaller).
+# See: https://github.com/yyuu/pyenv/wiki#how-to-build-cpython-with-framework-support-on-os-x
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
