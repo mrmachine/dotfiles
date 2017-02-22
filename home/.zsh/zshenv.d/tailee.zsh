@@ -28,7 +28,7 @@ export MASTER_PASSWORD=abc123
 export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/latest/lib:$DYLD_LIBRARY_PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-# Python
+# Python.
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONWARNINGS=ignore
 
