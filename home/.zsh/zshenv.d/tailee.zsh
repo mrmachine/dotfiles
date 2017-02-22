@@ -26,4 +26,5 @@ export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/l
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Python
+export PYTHONDONTWRITEBYTECODE=1
 export PYTHONWARNINGS=ignore
