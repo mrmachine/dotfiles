@@ -15,6 +15,12 @@ export PATH=$PATH:$GOPATH/bin
 # Homebrew.
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Make unlinked OpenSSL discoverable. See: http://stackoverflow.com/a/33125400
+OPENSSL_PREFIX="$(brew --prefix openssl)"
+export CFLAGS="-I$OPENSSL_PREFIX/include"
+export LDFLAGS="-L$OPENSSL_PREFIX/lib"
+export SWIG_FEATURES="-cpperraswarn -includeall -I$OPENSSL_PREFIX/include"
+
 # Postgres.app.
 export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/latest/lib:$DYLD_LIBRARY_PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
