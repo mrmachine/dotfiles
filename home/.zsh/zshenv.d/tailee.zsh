@@ -15,11 +15,14 @@ export PATH=$PATH:$GOPATH/bin
 # Homebrew.
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# Make unlinked OpenSSL discoverable. See: http://stackoverflow.com/a/33125400
-OPENSSL_PREFIX="$(brew --prefix openssl)"
-export CFLAGS="-I$OPENSSL_PREFIX/include"
-export LDFLAGS="-L$OPENSSL_PREFIX/lib"
-export SWIG_FEATURES="-cpperraswarn -includeall -I$OPENSSL_PREFIX/include"
+# Homebrew, OpenSSL.
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/openssl/include"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/openssl/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+# Homebrew, Readline.
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/readline/include"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/readline/lib"
 
 # ICEkit.
 export MASTER_PASSWORD=abc123
