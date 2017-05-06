@@ -9,32 +9,6 @@ alias drm='docker rm -v $(docker ps -a -q -f status=created -f status=exited)'
 alias drmi='docker rmi $(docker images -f "dangling=true" -q)'
 alias drun='docker-compose run --rm --service-ports'
 
-backupdocker() {
-	cp -f /usr/local/bin/docker /usr/local/bin/docker.backup
-	cp -f /usr/local/bin/docker-compose /usr/local/bin/docker-compose.backup
-	cp -f /usr/local/bin/docker-machine /usr/local/bin/docker-machine.backup
-}
-
-olddocker() {
-	alias docker='docker.backup'
-	alias docker-compose='docker-compose.backup'
-	alias docker-machine='docker-machine.backup'
-	eval $(dinghy env)
-}
-
-newdocker() {
-	unalias docker
-	unalias docker-compose
-	unalias docker-machine
-	unset DOCKER_TLS_VERIFY
-	unset DOCKER_CERT_PATH
-	unset DOCKER_MACHINE_NAME
-	unset DOCKER_HOST
-	ln -sf "/Users/tailee/Library/Group Containers/group.com.docker/bin/docker" /usr/local/bin/docker
-	ln -sf "/Users/tailee/Library/Group Containers/group.com.docker/bin/docker-compose" /usr/local/bin/docker-compose
-	ln -sf "/Users/tailee/Library/Group Containers/group.com.docker/bin/docker-machine" /usr/local/bin/docker-machine
-}
-
 # Git.
 git_merged_diff() {
 	comm -23 <(git branch -r --merged $1) <(git branch -r --merged $2)
