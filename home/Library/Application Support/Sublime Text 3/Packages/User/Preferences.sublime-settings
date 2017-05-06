@@ -4,7 +4,7 @@
 	"auto_complete_with_fields": true,
 	"auto_find_in_selection": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"detect_indentation": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
