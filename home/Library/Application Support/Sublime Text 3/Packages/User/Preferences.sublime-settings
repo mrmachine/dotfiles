@@ -69,6 +69,7 @@
 	"show_definitions": false,
 	"show_encoding": true,
 	"show_line_endings": true,
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
 	"word_wrap": false
