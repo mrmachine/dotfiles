@@ -22,6 +22,7 @@ zstyle ':prezto:load' pmodule \
 	'screen' \
 	'wakeonlan' \
 	'terminal' \
+	'tmux' \
 	'editor' \
 	'history' \
 	'directory' \
