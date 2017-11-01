@@ -38,3 +38,6 @@ export PYTHONWARNINGS=ignore
 # Build Python with framework/shared support (for PyInstaller).
 # See: https://github.com/yyuu/pyenv/wiki#how-to-build-cpython-with-framework-support-on-os-x
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
+
+# Visual Studio Code.
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
