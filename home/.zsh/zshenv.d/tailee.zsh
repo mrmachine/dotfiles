@@ -1,3 +1,6 @@
+# Use Docker Swarm for orchestration.
+export DOCKER_ORCHESTRATOR=swarm
+
 # Use Sublime Text as the default editor.
 export EDITOR='subl -n -w'
 export VISUAL=$EDITOR
