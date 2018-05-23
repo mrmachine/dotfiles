@@ -6,7 +6,13 @@ if [[ -d ~/.ssh/config.d ]]; then
 	fi
 	echo $HEAD >! ~/.ssh/config
 	for filename in ~/.ssh/config.d/*; do
-		echo "\n#\n# $filename\n#\n" >> ~/.ssh/config
+		cat <<-EOF >> ~/.ssh/config
+
+		#
+		# $filename
+		#
+
+		EOF
 		cat $filename >> ~/.ssh/config
 	done
 fi
