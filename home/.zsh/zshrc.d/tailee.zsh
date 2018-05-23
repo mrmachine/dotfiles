@@ -62,16 +62,16 @@ alias supctl='supervisorctl -c $HOME/etc/supervisor/supervisord.conf '
 # Sublime Text.
 alias sub='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 
-# pyenv-virtualenv.
-if which pyenv-virtualenv-init > /dev/null; then
-	eval "$(pyenv virtualenv-init -)"
-fi
+# # pyenv-virtualenv.
+# if which pyenv-virtualenv-init > /dev/null; then
+# 	eval "$(pyenv virtualenv-init -)"
+# fi
 
-# pyenv-virtualenvwrapper.
-if (( $+commands[pyenv] )); then
-	unset VIRTUAL_ENV_DISABLE_PROMPT  # Re-enable prompt, disabled by prezto.
-	pyenv virtualenvwrapper
-fi
+# # pyenv-virtualenvwrapper.
+# if (( $+commands[pyenv] )); then
+# 	unset VIRTUAL_ENV_DISABLE_PROMPT  # Re-enable prompt, disabled by prezto.
+# 	pyenv virtualenvwrapper
+# fi
 
 # Zsh options.
 setopt INTERACTIVE_COMMENTS

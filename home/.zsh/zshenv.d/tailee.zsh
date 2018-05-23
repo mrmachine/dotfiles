@@ -17,6 +17,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # Homebrew.
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export PATH=/usr/local/opt/gettext/bin:$PATH
 
 # Homebrew, OpenSSL.
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/openssl/include"
