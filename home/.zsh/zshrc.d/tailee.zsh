@@ -46,6 +46,9 @@ alias icprojects='cd ~/IC/Projects'
 # ls.
 alias ls='ls -FG'
 
+# Poetry.
+fpath+=~/.zfunc
+
 # ps.
 alias ps='ps -o pid,rss,pcpu,command'
 
