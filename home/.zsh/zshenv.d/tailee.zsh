@@ -1,23 +1,15 @@
 # Use Docker Swarm for orchestration.
 export DOCKER_ORCHESTRATOR=swarm
 
-# Use Sublime Text as the default editor.
-export EDITOR='subl -n -w'
-export VISUAL=$EDITOR
-
-# Use Sublime Text as the editor for Nose Progressive.
-export NOSE_PROGRESSIVE_EDITOR_SHORTCUT_TEMPLATE='  {dim_format}subl {path}:{line_number:<{line_number_max_width}}{normal}{function_format}{hash_if_function}{function}{normal}'
-
-# Add `~/bin` to `PATH`.
-export PATH=$HOME/bin:$PATH
+# django-master-password.
+export MASTER_PASSWORD=abc123
 
 # Go.
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
-# Homebrew.
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH=/usr/local/opt/gettext/bin:$PATH
+# Homebrew, Gettext.
+export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # Homebrew, OpenSSL.
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/openssl/include"
@@ -28,12 +20,9 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/readline/include"
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/readline/lib"
 
-# ICEkit.
-export MASTER_PASSWORD=abc123
-
 # Postgres.app.
-export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/latest/lib:$DYLD_LIBRARY_PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.5/lib:$DYLD_LIBRARY_PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
 # Python.
 export PYTHONDONTWRITEBYTECODE=1
@@ -43,5 +32,18 @@ export PYTHONWARNINGS=ignore
 # # See: https://github.com/yyuu/pyenv/wiki#how-to-build-cpython-with-framework-support-on-os-x
 # export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
+# SourceTree.
+export PATH="/Applications/SourceTree.app/Contents/Resources:$PATH"
+
+# Sublime Text.
+export PATH="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH"
+
+# Use Sublime Text as the default editor.
+export EDITOR='subl -n -w'
+export VISUAL="$EDITOR"
+
+# Use Sublime Text as the editor for Nose Progressive.
+export NOSE_PROGRESSIVE_EDITOR_SHORTCUT_TEMPLATE='  {dim_format}subl {path}:{line_number:<{line_number_max_width}}{normal}{function_format}{hash_if_function}{function}{normal}'
+
 # Visual Studio Code.
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"

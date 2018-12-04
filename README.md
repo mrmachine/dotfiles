@@ -17,8 +17,7 @@ Includes the following features:
   * Source Zprezto and Zsh scripts and combine SSH config files from
     `~/.zsh/zprezto.d`, `~/.zsh/zshrc.d`, `~/.ssh/config.d`, etc., making it
     easy to mixin partial dotfiles from collaborative castles.
-  * Aliases: `ls`, `ps`, `st` ([SourceTree][sourcetree]), `sup` and `supctl`
-    ([Supervisor][supervisor]), and `sub` ([Sublime Text][sublime-text]).
+  * Aliases: `ls`, `ps`, `sup` and `supctl` ([Supervisor][supervisor]).
   * Use Sublime Text as the default editor and for
     [Nose Progressive][nose-progressive].
   * Sublime Text [preferences][st-preferences] and plugins including:

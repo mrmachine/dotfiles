@@ -1,6 +1,9 @@
 syntax: glob
 
-*.orig
 *.pyc
+*.pyo
+*.sublime-workspace
 *~
+.anaconda
 .DS_Store
+.idea/
