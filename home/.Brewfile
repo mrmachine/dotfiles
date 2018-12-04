@@ -1,96 +1,123 @@
-# Taps
+# CLI
 
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'homebrew/versions'
-
-# General
-
-brew 'git'
-brew 'htop-osx'
 # brew 'openzfs'
+brew 'direnv'
+brew 'elasticsearch@5.6'
+brew 'git'
+brew 'git-lfs'
+brew 'git-time-metric/gtm/gtm'
+brew 'gnupg'
+brew 'go'
+brew 'htop-osx'
+brew 'jq'
+brew 'mas'
+brew 'md5sha1sum'
+brew 'mercurial'
+brew 'mosh'
+brew 'nginx'
+brew 'node@8'
 brew 'p7zip'
+brew 'par2'
+brew 'pv'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+brew 'rbenv'
+brew 'rclone'
+brew 'redis'
+brew 'restic'
+brew 'sloccount'
+brew 'sqlite'
+brew 'supervisor'
+brew 'telnet'
+brew 'tig'
+brew 'tmux'
+brew 'transcrypt'
 brew 'unrar'
 brew 'wakeonlan'
 brew 'wget'
-# brew 'znc'
+brew 'xz'
+brew 'yarn'
 brew 'zsh'
 
-# General GUI
+# GUI
 
-cask '1password'  # Install from App Store for iCloud support
-cask 'adium'
+# cask 'dropbox'
+# cask 'eyetv'
+# cask 'flash'
+# cask 'fontexplorer-x-pro'
+# cask 'handbrake'
+# cask 'kindle'
+# cask 'microsoft-office'
+# cask 'omnigraffle'
+# cask 'plex-media-server'
+# cask 'sabnzbd'
+# cask 'sidekick'
+# cask 'sketchup'
+# cask 'steam'
+# cask 'unetbootin'
+# cask 'vlc'
+# cask 'vyprvpn'
+# cask 'xquartz'
+cask '1password'
 cask 'appzapper'
 cask 'arq'
 cask 'bartender'
-cask 'bittorrent-sync'
 cask 'caffeine'
 cask 'carbon-copy-cloner'
-cask 'dockertoolbox'
-cask 'dropbox'
+cask 'docker'
 cask 'firefox'
-# cask 'flash'
-# cask 'fontexplorer-x-pro'
-cask 'google-chrome'  # Install manually for App Store 1Password compatibility
+cask 'franz'
+cask 'github-desktop'
+cask 'gitup'
+cask 'google-chrome'
+cask 'google-drive-file-stream'
 cask 'hazel'
 cask 'istat-menus'
-cask 'kindle'
-# cask 'macs-fan-control'
-# cask 'microsoft-office'
+cask 'macs-fan-control'
 cask 'moom'
-cask 'omnigraffle'
-# cask 'sabnzbd'
-# cask 'sidekick'
+cask 'osxfuse'
+cask 'port-map'
+cask 'postgres'
+cask 'resilio-sync'
 cask 'skype'
+cask 'slack'
 cask 'softraid'
-cask 'sublime-text-dev'
-# cask 'transmission'
+cask 'sourcetree'
+cask 'sublime-merge'
+cask 'sublime-text'
+cask 'transmission'
 cask 'transmit'
-# cask 'unetbootin'
-cask 'vlc'
-cask 'vmware-fusion'
-# cask 'vyprvpn'
-cask 'xquartz'
+cask 'vmware-fusion8'
+cask 'wacom-tablet'
+
+# Mac App Store
+
+# mas 'QR Journal', id: 483820530
+mas 'Aperture', id: 408981426
+mas 'Asset Catalog Creator Pro', id: 809625456
+mas 'Blackmagic Disk Speed Test', id: 425264550
+mas 'Deckset', id: 847496013
+mas 'Freckle', id: 879917538
+mas 'Trello', id: 1278508951
+mas 'Ulysses', id: 623795237
+mas 'Xcode', id: 497799835
 
 # Beets
 
-brew 'aacgain'
-brew 'chromaprint'
-brew 'faac'
-brew 'ffmpeg'
-brew 'flac'
-brew 'lame'
+# brew 'aacgain'
+# brew 'chromaprint'
+# brew 'faac'
+# brew 'ffmpeg'
+# brew 'flac'
+# brew 'lame'
 
-# Developer
+# Syrinscape
 
-brew 'mercurial'
-# brew 'nginx'
-brew 'node'
-# brew 'postgresql'
-brew 'pyenv'
-brew 'pyenv-virtualenv'
-brew 'pyenv-virtualenvwrapper'
-brew 'sloccount'
-brew 'sqlite'
-
-# Developer GUI
-
-cask 'github-desktop'
-cask 'port-map'
-cask 'postgres'
-cask 'sourcetree'
-
-# Personal GUI
-
-# cask 'e-tax2014'
-cask 'eyetv'
-cask 'handbrake'
-cask 'plex-home-theater'
-# cask 'plex-media-server'
-# cask 'sketchup'
-cask 'steam'
-cask 'wacom-tablet'
-
-# IC GUI
-# cask 'hipchat'
-# cask 'slack'
+# brew 'sox', args: ['with-flac', 'with-lame', 'with-libvorbis']
+# brew 'swig'
+# cask 'jdk8'
+# cask 'unity-android-support-for-editor'
+# cask 'unity-ios-support-for-editor'
+# cask 'unity-web-player'
+# cask 'unity-windows-support-for-editor'
+# cask 'unity@5.5.6'
