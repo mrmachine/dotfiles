@@ -4,6 +4,10 @@ tap 'git-time-metric/gtm'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 
+# Dependencies
+
+cask 'java8'  # elasticsearch@5.6
+
 # CLI
 
 # brew 'openzfs'
