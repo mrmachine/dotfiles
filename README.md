@@ -4,7 +4,7 @@ Overview
 A bootstrap script for [Homeshick][homeshick], [Prezto][prezto],
 [Homebrew][homebrew] and my personal dotfiles.
 
-	curl -L http://bit.ly/mrmachine-dotfiles | sh
+	curl -L https://raw.githubusercontent.com/mrmachine/dotfiles/master/bootstrap.sh | sh
 
 Includes the following features:
 
