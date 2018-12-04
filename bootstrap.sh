@@ -37,9 +37,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "Installing from global brewfile."
 brew bundle --global
 
-# Xcode.
-sudo xcodebuild -license accept
-
 # pyenv.
 echo "Initialising pyenv."
 eval "$(pyenv init -)"
