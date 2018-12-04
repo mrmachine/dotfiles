@@ -1,3 +1,9 @@
+# Taps
+
+tap 'git-time-metric/gtm'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-versions'
+
 # CLI
 
 # brew 'openzfs'
@@ -5,9 +11,9 @@ brew 'direnv'
 brew 'elasticsearch@5.6'
 brew 'git'
 brew 'git-lfs'
-brew 'git-time-metric/gtm/gtm'
 brew 'gnupg'
 brew 'go'
+brew 'gtm'
 brew 'htop-osx'
 brew 'jq'
 brew 'mas'
