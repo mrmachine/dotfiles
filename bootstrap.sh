@@ -13,11 +13,8 @@ read -n 1 -s
 echo "Installing Homebrew."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Brewfile.
-echo "Installing from global Brewfile."
-brew bundle --global
-
 # Homeshick.
+brew install homeshick
 export HOMESHICK_DIR=/usr/local/opt/homeshick
 source /usr/local/opt/homeshick/homeshick.sh
 
@@ -35,6 +32,10 @@ echo "Cloning Homeshick castles."
 
 echo "Linking Homeshick castles."
 homeshick link
+
+# Brewfile.
+echo "Installing from global Brewfile."
+brew bundle --global
 
 # Python.
 eval "$(pyenv init -)"
