@@ -30,6 +30,9 @@ echo 'Cloning Homeshick castles.'
 [ ! -d "$HOME/.homesick/repos/GitGutter" ] && homeshick clone -b jisaacks/GitGutter
 [ ! -d "$HOME/.homesick/repos/sublime_package_control" ] && homeshick clone -b wbond/sublime_package_control
 
+echo 'Updating Homeshick castles.'
+homeshick pull
+
 echo 'Linking Homeshick castles.'
 homeshick link
 
