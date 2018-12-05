@@ -5,12 +5,12 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Command line tools.
-echo "Installing command line tools, if necessary. Press any key to continue."
+echo 'Installing command line tools, if necessary. Press any key to continue.'
 sudo xcode-select --install > /dev/null 2>&1
 read -n 1 -s
 
 # Homebrew.
-echo "Installing Homebrew."
+echo 'Installing Homebrew.'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Homeshick.
@@ -18,7 +18,7 @@ brew install homeshick
 export HOMESHICK_DIR=/usr/local/opt/homeshick
 source /usr/local/opt/homeshick/homeshick.sh
 
-echo "Cloning Homeshick castles."
+echo 'Cloning Homeshick castles.'
 # General.
 [ ! -d "$HOME/.homesick/repos/base16-osx-color-palette" ] && homeshick clone -b chriskempson/base16-osx-color-palette
 [ ! -d "$HOME/.homesick/repos/dotfiles" ] && homeshick clone -b mrmachine/dotfiles
@@ -30,15 +30,15 @@ echo "Cloning Homeshick castles."
 [ ! -d "$HOME/.homesick/repos/GitGutter" ] && homeshick clone -b jisaacks/GitGutter
 [ ! -d "$HOME/.homesick/repos/sublime_package_control" ] && homeshick clone -b wbond/sublime_package_control
 
-echo "Linking Homeshick castles."
+echo 'Linking Homeshick castles.'
 homeshick link
 
 # Brewfile.
-echo "Installing from global Brewfile."
+echo 'Installing from global Brewfile.'
 brew bundle --global
 
 # Python.
-echo "Installing Python versions."
+echo 'Installing Python versions.'
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 eval "$(pyenv init -)"
 pyenv install 2.6.9
@@ -48,12 +48,12 @@ pyenv global 3.6.6 2.7.15
 
 # Zsh.
 hash zsh 2>/dev/null || {
-    echo >&2 "Zsh is not installed. Aborting."
+    echo >&2 'Zsh is not installed. Aborting.'
     exit 1
 }
 ZSH="$(which zsh)"
 if [ "$ZSH" != "$SHELL" ]; then
-    echo "Changing shell to Zsh."
+    echo 'Changing shell to Zsh.'
     if [ -z "$(grep $ZSH /etc/shells)" ]; then
         echo "$ZSH" | sudo tee -a /etc/shells
     fi
