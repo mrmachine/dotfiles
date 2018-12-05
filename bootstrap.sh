@@ -36,12 +36,8 @@ echo "Cloning Homeshick castles."
 echo "Linking Homeshick castles."
 homeshick link
 
-
-# pyenv.
-echo "Initialising pyenv."
-eval "$(pyenv init -)"
-
 # Python.
+eval "$(pyenv init -)"
 echo "Installing Python versions."
 pyenv install 2.6.9
 pyenv install 2.7.15
