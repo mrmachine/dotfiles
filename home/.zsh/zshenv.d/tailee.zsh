@@ -27,6 +27,9 @@ export LDFLAGS="$LDFLAGS -L/usr/local/opt/readline/lib"
 export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.5/lib:$DYLD_LIBRARY_PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
+# PyCharm.
+export PATH="/Applications/PyCharm.app/Contents/MacOS:$PATH"
+
 # Python.
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONWARNINGS=ignore
