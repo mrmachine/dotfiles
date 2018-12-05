@@ -82,5 +82,6 @@ Additional manual configuration:
 * Configure daily Carbon Copy Cloner backups to a disk image (NAS) or locally attached disk.
 * Configure Internet Accounts in System Preferences (e.g. Facebook, Google, etc.)
 * Configure sync in Google Chrome and Firefox.
+* Start and stop Homebrew services as required: 'brew services [start|stop] [elasticsearch@5.6|redis|supervisor]'
 
 EOF
