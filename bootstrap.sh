@@ -18,6 +18,7 @@ brew install homeshick
 export HOMESHICK_DIR=/usr/local/opt/homeshick
 source /usr/local/opt/homeshick/homeshick.sh
 
+# Homeshick castles.
 echo 'Cloning Homeshick castles.'
 # General.
 [ ! -d "$HOME/.homesick/repos/base16-osx-color-palette" ] && homeshick clone -b chriskempson/base16-osx-color-palette
@@ -29,14 +30,12 @@ echo 'Cloning Homeshick castles.'
 [ ! -d "$HOME/.homesick/repos/editorconfig-sublime" ] && homeshick clone -b sindresorhus/editorconfig-sublime
 [ ! -d "$HOME/.homesick/repos/GitGutter" ] && homeshick clone -b jisaacks/GitGutter
 [ ! -d "$HOME/.homesick/repos/sublime_package_control" ] && homeshick clone -b wbond/sublime_package_control
-
 echo 'Updating Homeshick castles.'
 homeshick pull
-
 echo 'Linking Homeshick castles.'
 homeshick link
 
-# Brewfile.
+# Global Brewfile.
 echo 'Installing from global Brewfile.'
 brew bundle --global
 
