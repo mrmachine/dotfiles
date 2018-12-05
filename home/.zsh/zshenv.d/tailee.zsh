@@ -4,6 +4,9 @@ export DOCKER_ORCHESTRATOR=swarm
 # django-master-password.
 export MASTER_PASSWORD=abc123
 
+# GitUp.
+export PATH="/Applications/GitUp.app/Contents/SharedSupport:$PATH"
+
 # Go.
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
