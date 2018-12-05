@@ -4,7 +4,7 @@ Overview
 A bootstrap script for [Homeshick][homeshick], [Prezto][prezto],
 [Homebrew][homebrew] and my personal dotfiles.
 
-	curl -L https://raw.githubusercontent.com/mrmachine/dotfiles/master/bootstrap.sh | sh
+	curl -sL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/mrmachine/dotfiles/master/bootstrap.sh | sh
 
 Includes the following features:
 
