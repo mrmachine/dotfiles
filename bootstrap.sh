@@ -65,6 +65,8 @@ fi
 # Now the manual steps.
 cat <<EOF
 
+# DONE
+
 Homeshick and castles installed. Open a new terminal window or tab for dotfiles
 to take effect.
 
