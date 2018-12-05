@@ -130,16 +130,3 @@ mas 'Ulysses', id: 623795237
 # brew 'ffmpeg'
 # brew 'flac'
 # brew 'lame'
-
-# Syrinscape
-
-# brew 'sox', args: ['with-flac', 'with-lame', 'with-libvorbis']
-# brew 'swig'
-# cask 'java8'
-# cask 'unity-android-support-for-editor'
-# cask 'unity-ios-support-for-editor'
-# cask 'unity-web-player'
-# cask 'unity-windows-support-for-editor'
-# cask 'unity@5.5.6'
-# mas 'Asset Catalog Creator Pro', id: 809625456
-# mas 'Xcode', id: 497799835
