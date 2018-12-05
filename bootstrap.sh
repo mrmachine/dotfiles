@@ -38,9 +38,9 @@ echo "Installing from global Brewfile."
 brew bundle --global
 
 # Python.
+echo "Installing Python versions."
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 eval "$(pyenv init -)"
-echo "Installing Python versions."
 pyenv install 2.6.9
 pyenv install 2.7.15
 pyenv install 3.6.6
