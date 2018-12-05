@@ -5,7 +5,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Command line tools.
-echo "Attempting to install command line tools, if necessary. Press any key to continue."
+echo "Installing command line tools, if necessary. Press any key to continue."
 sudo xcode-select --install > /dev/null 2>&1
 read -n 1 -s
 
