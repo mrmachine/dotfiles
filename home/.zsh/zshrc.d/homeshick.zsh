@@ -1,3 +1,2 @@
-# Load homeshick function and zsh completion.
-source $HOME/.homesick/repos/homeshick/homeshick.sh
-fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+source /usr/local/opt/homeshick/homeshick.sh

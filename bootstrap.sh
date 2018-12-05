@@ -9,33 +9,33 @@ echo "Attempting to install command line tools, if necessary. Press any key to c
 sudo xcode-select --install > /dev/null 2>&1
 read -n 1 -s
 
-# Dotfiles.
-if [ ! -d "$HOME/.homesick/repos/homeshick" ]; then
-    echo "Installing Homeshick."
-    git clone https://github.com/andsens/homeshick.git "$HOME/.homesick/repos/homeshick"
-fi
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-
-echo "Cloning Homeshick castles."
-[ ! -d "$HOME/.homesick/repos/anaconda" ] && homeshick clone -b DamnWidget/anaconda
-[ ! -d "$HOME/.homesick/repos/base16-osx-color-palette" ] && homeshick clone -b chriskempson/base16-osx-color-palette
-[ ! -d "$HOME/.homesick/repos/Djaneiro" ] && homeshick clone -b squ1b3r/Djaneiro
-[ ! -d "$HOME/.homesick/repos/dotfiles" ] && homeshick clone -b mrmachine/dotfiles
-[ ! -d "$HOME/.homesick/repos/editorconfig-sublime" ] && homeshick clone -b sindresorhus/editorconfig-sublime
-[ ! -d "$HOME/.homesick/repos/GitGutter" ] && homeshick clone -b jisaacks/GitGutter
-[ ! -d "$HOME/.homesick/repos/prezto" ] && homeshick clone -b sorin-ionescu/prezto
-[ ! -d "$HOME/.homesick/repos/sublime_package_control" ] && homeshick clone -b wbond/sublime_package_control
-
-echo "Linking Homeshick castles."
-homeshick link
-
 # Homebrew.
 echo "Installing Homebrew."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Brewfile.
-echo "Installing from global brewfile."
+echo "Installing from global Brewfile."
 brew bundle --global
+
+# Homeshick.
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+source /usr/local/opt/homeshick/homeshick.sh
+
+echo "Cloning Homeshick castles."
+# General.
+[ ! -d "$HOME/.homesick/repos/base16-osx-color-palette" ] && homeshick clone -b chriskempson/base16-osx-color-palette
+[ ! -d "$HOME/.homesick/repos/dotfiles" ] && homeshick clone -b mrmachine/dotfiles
+[ ! -d "$HOME/.homesick/repos/prezto" ] && homeshick clone -b sorin-ionescu/prezto
+# Sublime Text.
+[ ! -d "$HOME/.homesick/repos/anaconda" ] && homeshick clone -b DamnWidget/anaconda
+[ ! -d "$HOME/.homesick/repos/Djaneiro" ] && homeshick clone -b squ1b3r/Djaneiro
+[ ! -d "$HOME/.homesick/repos/editorconfig-sublime" ] && homeshick clone -b sindresorhus/editorconfig-sublime
+[ ! -d "$HOME/.homesick/repos/GitGutter" ] && homeshick clone -b jisaacks/GitGutter
+[ ! -d "$HOME/.homesick/repos/sublime_package_control" ] && homeshick clone -b wbond/sublime_package_control
+
+echo "Linking Homeshick castles."
+homeshick link
+
 
 # pyenv.
 echo "Initialising pyenv."
