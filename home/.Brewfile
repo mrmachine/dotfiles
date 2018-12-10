@@ -11,7 +11,7 @@ cask 'java8'  # elasticsearch@5.6
 # CLI
 
 brew 'direnv'
-brew 'elasticsearch@5.6'
+brew 'elasticsearch@5.6', link: true
 brew 'git'
 brew 'git-lfs'
 brew 'gnupg'
@@ -25,9 +25,10 @@ brew 'md5sha1sum'
 brew 'mercurial'
 brew 'mosh'
 brew 'nginx'
-brew 'node@8'
+brew 'node@8', link: true
 brew 'p7zip'
 brew 'par2'
+brew 'postgresql@9.5', link: true
 brew 'pv'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
