@@ -23,6 +23,11 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/readline/include"
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/readline/lib"
 
+# Node.
+# export CPPFLAGS='-I/usr/local/opt/node@8/include'
+# export LDFLAGS='-L/usr/local/opt/node@8/lib'
+# export PATH="/usr/local/opt/node@8/bin:$PATH"
+
 # Postgres.app.
 # export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.5/lib:$DYLD_LIBRARY_PATH"
 # export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
