@@ -3,6 +3,7 @@
 tap 'git-time-metric/gtm'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
+tap 'ixc/ixc'
 
 # Dependencies
 
@@ -11,6 +12,7 @@ cask 'java8'  # elasticsearch@5.6
 # CLI
 
 brew 'direnv'
+brew 'dockerize@0.5', link: true
 brew 'elasticsearch@5.6', link: true
 brew 'git'
 brew 'git-lfs'
