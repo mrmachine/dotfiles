@@ -5,7 +5,7 @@ export DOCKER_ORCHESTRATOR=swarm
 export MASTER_PASSWORD=abc123
 
 # GitUp.
-export PATH="/Applications/GitUp.app/Contents/SharedSupport:$PATH"
+# export PATH="/Applications/GitUp.app/Contents/SharedSupport:$PATH"
 
 # Go.
 export GOPATH="$HOME/go"
@@ -24,8 +24,8 @@ export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/readline/include"
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/readline/lib"
 
 # Postgres.app.
-export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.5/lib:$DYLD_LIBRARY_PATH"
-export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
+# export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.5/lib:$DYLD_LIBRARY_PATH"
+# export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
 # PyCharm.
 export PATH="/Applications/PyCharm.app/Contents/MacOS:$PATH"
@@ -39,10 +39,10 @@ export PYTHONWARNINGS=ignore
 # export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
 # SourceTree.
-export PATH="/Applications/SourceTree.app/Contents/Resources:$PATH"
+# export PATH="/Applications/SourceTree.app/Contents/Resources:$PATH"
 
 # Sublime Text.
-export PATH="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH"
+# export PATH="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH"
 
 # Use Sublime Text as the default editor.
 export EDITOR='subl -n -w'
@@ -52,4 +52,4 @@ export VISUAL="$EDITOR"
 export NOSE_PROGRESSIVE_EDITOR_SHORTCUT_TEMPLATE='  {dim_format}subl {path}:{line_number:<{line_number_max_width}}{normal}{function_format}{hash_if_function}{function}{normal}'
 
 # Visual Studio Code.
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+# export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
