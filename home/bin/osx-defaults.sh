@@ -29,9 +29,7 @@
 # defaults write com.apple.Aperture CropGuidesOnOff -int 1
 
 # Contacts, Preferences, General
-# Show First Name: [x] Before last name
-# Sort By: [Last Name]
-defaults write com.apple.AddressBook ABNameDisplay -int 0
+# Sort By: [Given Name]
 defaults write com.apple.AddressBook ABNameSortingFormat 'sortingFirstName sortingLastName'
 
 # Finder, Preferences, General
