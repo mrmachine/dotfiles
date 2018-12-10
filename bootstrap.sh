@@ -27,6 +27,7 @@ echo 'Cloning Homeshick castles.'
 # Sublime Text.
 [ ! -d "$HOME/.homesick/repos/anaconda" ] && homeshick clone -b DamnWidget/anaconda
 [ ! -d "$HOME/.homesick/repos/Djaneiro" ] && homeshick clone -b squ1b3r/Djaneiro
+[ ! -d "$HOME/.homesick/repos/Docker.tmbundle" ] && homeshick clone -b asbjornenge/Docker.tmbundle
 [ ! -d "$HOME/.homesick/repos/editorconfig-sublime" ] && homeshick clone -b sindresorhus/editorconfig-sublime
 [ ! -d "$HOME/.homesick/repos/GitGutter" ] && homeshick clone -b jisaacks/GitGutter
 [ ! -d "$HOME/.homesick/repos/sublime_package_control" ] && homeshick clone -b wbond/sublime_package_control
