@@ -112,6 +112,7 @@ cask 'tripmode'
 cask 'visual-studio-code'
 cask 'vmware-fusion8'
 cask 'wacom-tablet'
+cask 'whatsapp'
 cask 'xquartz'
 cask 'zoomus'
 
