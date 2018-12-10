@@ -49,7 +49,7 @@ brew 'unrar'
 brew 'wakeonlan'
 brew 'wget'
 brew 'xz'
-brew 'yarn'
+brew 'yarn', args: ['without-node']
 brew 'zsh'
 
 # GUI
