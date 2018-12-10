@@ -2,31 +2,31 @@
 
 # 1Password, View, Item List Layout
 # [x] Top
-defaults write com.agilebits.onepassword4 MainWindowLayout 'H'
+# defaults write com.agilebits.onepassword4 MainWindowLayout 'H'
 
 # 1Password, Preferences, Watchtower
 # [x] Enable 1Password Watchtower
-defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper watchtowerService -int 1
+# defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper watchtowerService -int 1
 
 # 1Password, Preferences, Browser
 # [ ] Automatically submit logins after filling
-defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper autosubmit -int 0
+# defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper autosubmit -int 0
 
 # 1Password, Preferences, Advanced
 # [ ] Verify browser code signature
-defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper OPPrefBrowserCodesigningRequirementDisabled -int 1
+# defaults write 2BUA8C4S2C.com.agilebits.onepassword4-helper OPPrefBrowserCodesigningRequirementDisabled -int 1
 
 # Activity Monitor, Network
 # Network Graph Type: [DATA]
-defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
+# defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
 
 # Aperture, Preferences, Appearance
 # [x] Show number of versions for projects and albums
-defaults write com.apple.Aperture showProjectVersionCount -int 1
+# defaults write com.apple.Aperture showProjectVersionCount -int 1
 
 # Aperture, Crop
 # [x] Show Guides
-defaults write com.apple.Aperture CropGuidesOnOff -int 1
+# defaults write com.apple.Aperture CropGuidesOnOff -int 1
 
 # Contacts, Preferences, General
 # Show First Name: [x] Before last name
@@ -69,7 +69,7 @@ defaults write com.apple.finder DesktopViewSettings '{ "IconViewSettings" = { "i
 # [x] Sensor-based value: (HDD)
 # Temperature that fan speed will start to increase from: [42]
 # Maximum temperature: [52]
-defaults write com.crystalidea.macsfancontrol Fan_1 '2,WDC WD40EFRX-68WT0N0,42,52'
+# defaults write com.crystalidea.macsfancontrol Fan_1 '2,WDC WD40EFRX-68WT0N0,42,52'
 
 # Safari, Preferences, General
 # Safari opens with: [All windows from last session]
@@ -83,7 +83,7 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -int 1
 
 # Safari, Preferences, Notifications
 # [ ] Allow websites to ask for permission to send push notifications
-defaults write com.apple.Safari CanPromptForPushNotifications -int 0
+# defaults write com.apple.Safari CanPromptForPushNotifications -int 0
 
 # Safari, Preferences, Advanced
 # Smart Search Field: [x] Show full website address
@@ -182,10 +182,10 @@ defaults write -g userMenuExtraStyle -int 2
 # [x] Delete files sitting in the Trash for more than [1] [Week]
 # [x] Enable App Sweep
 # [x] Enable multi-user sweep
-defaults write com.noodlesoft.Hazel TrashPurgeOldFiles -int 1
+# defaults write com.noodlesoft.Hazel TrashPurgeOldFiles -int 1
 # TODO: Set [1] and [Week].
-defaults write com.noodlesoft.Hazel TrashUninstallApps -int 1
-defaults write com.noodlesoft.Hazel UninstallLogEnabled -int 1
+# defaults write com.noodlesoft.Hazel TrashUninstallApps -int 1
+# defaults write com.noodlesoft.Hazel UninstallLogEnabled -int 1
 
 # VMware Fusion, Virtual Machine, Settings, Applications Menu
 # Show applications menu in menu bar: [Never]
@@ -228,22 +228,6 @@ Here are some more defaults that need to be set manually:
 
     Finder, View, Show View Options (tailee)
         [x] Show Library Folder
-
-    iTunes, View
-        [x] Show Status Bar
-
-    iTunes, Preferences, General
-        Ratings: [Stars & Loves]
-
-    iTunes, Preferences, General, Import Settings...
-        [x] Use error correction when reading Audio CDs
-
-    iTunes, Preferences, Sharing
-        [x] Share my library on my local network
-        [x] Home Sharing computers and devices update play counts
-
-    iTunes, Preferences, Advanced
-        [ ] Copy files to iTunes Media folder when adding to library
 
     Macs Fan Control, Preferences, General
         [x] Autostart minimized with system
