@@ -120,6 +120,17 @@ defaults write com.apple.screensaver askForPasswordDelay -int 60  # 60 Seconds =
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 25
 
+# System Preferences, Keyboard, Text
+# [ ] Correct spelling automatically
+# [ ] Capitalise words automatically
+# [ ] Add period with double-space
+# [ ] Use smart quotes and dashes
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
 # System Preferences, Keyboard, Shortcuts
 # Mission Control:
 #   [ ] Mission Control
